@@ -8,6 +8,7 @@ const all = async (req,res,next) => {
 }
 
 const add = async (req,res,next) => {
+    // console.log(req.user);
     let dbPermit = await DB.findOne({name : req.body.name});
     if (dbPermit) {
         next (new Error("Permission is already exit"))

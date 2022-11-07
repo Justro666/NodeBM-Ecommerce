@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Owner",
+        "email" : "owener@gmail.com",
+        "phone" : "09100100100",
+        "password": "100100100"
+    },
+    {
+        "name" : "Manager",
+        "email" : "manager@gmail.com",
+        "phone" : "09200200200",
+        "password": "200200200"
+    }
+]

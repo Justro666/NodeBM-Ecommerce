@@ -1,0 +1,25 @@
+{
+    "roles" : [
+        {
+            "name" : "Owner"
+        },
+        {
+            "name": "Manager"
+        },
+        {
+            "name": "Supervisor"
+        }
+    ],
+
+    "permits": [
+        {
+            "name": "Create_Catageory"
+        },
+        {
+            "name": "Update_Catageory"
+        },
+        {
+            "name": "Delete_Catageory"
+        }
+    ]
+}

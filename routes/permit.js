@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const controller = require("../controller/permit");
-const {validateBody ,validateParams} = require("../utils/validator");
+const {validateBody ,validateParams,validateToken} = require("../utils/validator");
 const {PermitSchema} =require("../utils/schema")
 
 router.get("/",controller.all);
-router.post("/",validateBody(PermitSchema.add),controller.add);
+router.post("/",[validateToken(),validateBody(PermitSchema.add),controller.add]);
 
 router.route("/:id")
     .get(validateParams(PermitSchema.id,"id"),controller.get)
